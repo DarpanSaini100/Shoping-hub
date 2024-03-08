@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(https://pakistanhouse.net/wp-content/uploads/2022/12/1_SwFB1o_k1LGprN-XRUZQ8w-1200x900.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content:space-around;
+}
+
+main{
+    flex:1;
+}
+
+/* navbar css*/
+#topnav{
+    background-color: #000;
+}
+.logo{
+    margin-left: 100px;
+    width:150px;
+     height:75px;
+     border-radius: 15px;
+}
+
+.contain {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+#navsearch{
+   
+    width: 450px;
+}
+
+
+#ecom{
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    color:#fff;
+}
+
+h1{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:#fff;
+    text-align: center;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(30, 188, 194),
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+/* all product page css*/
+.product-grid-large {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+/* footer css*/
+footer {
+    margin-top: 40px;
+    align-items: center;
+    background-color: #000;
+    color: #fff; 
+}
+
+footer ul li a{
+
+    text-decoration: none;
+    color: #fff;
+}
+
+footer #tag{
+    text-align: center;
+}
+
+/* login page css*/
+#loginmain{
+    margin: 20px;
+    flex: 1;
+    display: flex;
+   justify-content: center;
+  
+   
+}
+
+.block {
+    position: relative;
+    padding: 20px;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.block::before,
+.block::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 5px solid rgb(50, 195, 221);
+    filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.form-label,
+.form-text {
+    color: #fff;
+}
+
+
+/* Medium Devices */
+@media (max-width: 768px) {
+    .product-grid-large {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .product-grid-large {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* carousel*/
+.contain{
+    backdrop-filter: blur(10px );
+}
+
+
+h2{
+    text-align: center;
+    color:#fff;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev{
+    display: flex;
+    
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start{
+    transform: translateX(0);
+}
+
+
+@media (min-width: 768px)  and (max-width: 991px) {
+    #carouselExample .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    #carouselExample .carousel-inner .carousel-item>div:nth-child(-n+2) {
+        display: block;}
+        
+}
+
+
+@media(max-width:550px){
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child{
+        display:block;
+    }
+}
+
+.carousel{
+    width:70%;
+}
+
+.carousel-inner{
+    margin-bottom: 10px;
+}
+
+.crbtn{
+    width: 100px;
+}
+
+.crimg{
+    object-fit: cover; 
+    max-width: 250px; /* Set the maximum width */
+    max-height: 300px; /* Set the maximum height */
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 300px;
+}
+
+/*--- card css---*/
+.card-body{
+    text-align: center;
+    border: #fff solid 1px;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    margin-bottom: 10px;
+}
+
+.card-body::before,
+.card-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 5px solid rgb(50, 195, 221);
+    filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+ /* contect us */
+ .glow {
+    position: relative;
+    padding: 20px;
+    width: 850px;
+    height: 450px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.glow::before,
+.glow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 5px solid rgb(50, 195, 221);
+    filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.sub{
+    margin-top: 10px;
+}
+
+.contact-image{
+    width: 250px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.product-item img {
+
+    object-fit: cover; 
+  max-width: 250px; /* Set the maximum width */
+  max-height: 300px; /* Set the maximum height */
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: 300px;
+  }
+
+  .btn{
+    border: blue 2px solid;
+    color: white;
+    background: black;
+  }
+/*cart css*/
+  .card-title{
+    color:white;
+    margin: 10px;
+  }
+
+  .card{
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+  
+.card-text{
+    color:#fff;
+}
+
+.cover{
+    backdrop-filter: blur(10px);
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+    
+}
+
+.cover::before,
+.cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 5px solid rgb(50, 195, 221);
+    filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+/* all product card */
+
+.product-item{
+    backdrop-filter: blur(10px);
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.product-item::before,
+.product-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 5px solid rgb(50, 195, 221);
+    filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
